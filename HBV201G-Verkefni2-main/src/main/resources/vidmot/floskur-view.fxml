@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox stylesheets="@css/floskur.css" alignment="CENTER" prefHeight="512.0" prefWidth="841.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.FloskurController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+
+   <HBox fx:id="dosirHBox" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="704.0">
+         <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Dósir">
+            <HBox.margin>
+               <Insets right="20.0" />
+            </HBox.margin>
+            <font>
+               <Font size="18.0" />
+            </font></Label>
+         <TextField fx:id="textFieldDosir" styleClass="textField" onAction="#onDosir" prefHeight="60.0" prefWidth="250.0" promptText="Sláðu inn tölu">
+            <HBox.margin>
+               <Insets right="20.0" />
+            </HBox.margin></TextField>
+        <Label fx:id="dosirLabel" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <VBox.margin>
+         <Insets right="10.0" />
+      </VBox.margin>
+   </HBox>
+
+  <HBox fx:id="floskurHBox" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="704.0">
+      <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Flöskur">
+        <HBox.margin>
+          <Insets right="20.0" />
+        </HBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="textFieldFloskur" styleClass="textField" onAction="#onFloskur" prefHeight="60.0" prefWidth="250.0" promptText="Sláðu inn tölu">
+        <HBox.margin>
+          <Insets right="20.0" />
+        </HBox.margin></TextField>
+      <Label fx:id="floskurLabel" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+    <VBox.margin>
+      <Insets right="10.0" />
+    </VBox.margin>
+  </HBox>
+
+  <HBox fx:id="samtalsHBox" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="704.0">
+      <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Samtals">
+        <HBox.margin>
+          <Insets right="20.0" />
+        </HBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="samtalsEinn" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+        <HBox.margin>
+          <Insets right="20.0" />
+        </HBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="samtalsTveir" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+    <VBox.margin>
+      <Insets right="10.0" />
+    </VBox.margin>
+  </HBox>
+
+  <HBox fx:id="greidaHBox" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="704.0">
+         <Button fx:id="buttonGreida" mnemonicParsing="false" onAction="#onGreida" prefHeight="60.0" prefWidth="250.0" text="Greiða">
+            <HBox.margin>
+               <Insets right="20.0" />
+            </HBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+         </Button>
+      <Label fx:id="greidaEinn" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+        <HBox.margin>
+          <Insets right="20.0" />
+        </HBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="greidaTveir" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+    <VBox.margin>
+      <Insets right="10.0" />
+    </VBox.margin>
+  </HBox>
+
+  <HBox id="hreinsaHBox" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="704.0">
+      <Button fx:id="buttonHreinsa" mnemonicParsing="false" onAction="#onHreinsa" prefHeight="60.0" prefWidth="250.0" styleClass="buttons" text="Hreinsa">
+        <HBox.margin>
+          <Insets right="20.0" />
+        </HBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+  </HBox>
+
+</VBox>
