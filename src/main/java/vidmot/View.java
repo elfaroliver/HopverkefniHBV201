@@ -6,7 +6,17 @@ public enum View {
 
     GLER("vidmot/maSkilaGler-view.fxml"),
 
-    ÁL("vidmot/maSkilaAl-view.fxml");
+    ÁL("vidmot/maSkilaAl-view.fxml"),
+
+    AUSTUR("vidmot/hvertAustur-view.fxml"),
+
+    HOFUD("vidmot/hvertHofud-view.fxml"),
+
+    NORDUR("vidmot/hvertNordur-view.fxml"),
+
+    SUDUR("vidmot/hvertSudur-view.fxml"),
+
+    VESTUR("vidmot/hvertVestur-view.fxml");
 
     private final String fileName;
 
