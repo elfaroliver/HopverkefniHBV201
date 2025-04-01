@@ -3,6 +3,7 @@ package vidmot;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 
 public class Menu {
 
@@ -16,6 +17,16 @@ public class Menu {
     private Button buttonSudur;
     @FXML
     private Button buttonVestur;
+    @FXML
+    private MenuItem FaraAustur;
+    @FXML
+    private MenuItem FaraHofud;
+    @FXML
+    private MenuItem FaraNordur;
+    @FXML
+    private MenuItem FaraSudur;
+    @FXML
+    private MenuItem FaraVestur;
     @FXML
     private Button fxTilAl;
     @FXML

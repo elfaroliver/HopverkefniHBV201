@@ -17,11 +17,11 @@
           </Menu>
             <Menu mnemonicParsing="false" text="Staðsetningar">
               <items>
-                <MenuItem fx:id="buttonAustur" mnemonicParsing="false" text="Austurland" onAction="#fxFaraAustur"/>
-                <MenuItem fx:id="buttonHofud" mnemonicParsing="false" text="Höfuðborgarsvæðið" onAction="#fxFaraHofud"/>
-                <MenuItem fx:id="buttonNordur" mnemonicParsing="false" text="Norðurland" onAction="#fxFaraNordur"/>
-                <MenuItem fx:id="buttonSudur" mnemonicParsing="false" text="Suðurland" onAction="#fxFaraSudur"/>
-                <MenuItem fx:id="buttonVestur" mnemonicParsing="false" text="Vesturland" onAction="#fxFaraVestur"/>
+                <MenuItem fx:id="FaraAustur" mnemonicParsing="false" text="Austurland" onAction="#fxFaraAustur"/>
+                <MenuItem fx:id="FaraHofud" mnemonicParsing="false" text="Höfuðborgarsvæðið" onAction="#fxFaraHofud"/>
+                <MenuItem fx:id="FaraNordur" mnemonicParsing="false" text="Norðurland" onAction="#fxFaraNordur"/>
+                <MenuItem fx:id="FaraSudur" mnemonicParsing="false" text="Suðurland" onAction="#fxFaraSudur"/>
+                <MenuItem fx:id="FaraVestur" mnemonicParsing="false" text="Vesturland" onAction="#fxFaraVestur"/>
               </items>
             </Menu>
           <Menu mnemonicParsing="false" text="Hverju má henda">
