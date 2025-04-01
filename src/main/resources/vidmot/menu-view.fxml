@@ -6,37 +6,40 @@
 <?import javafx.scene.layout.BorderPane?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.Menu">
-   <top>
-      <MenuBar BorderPane.alignment="CENTER">
-        <menus>
-          <Menu mnemonicParsing="false" text="Telja">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-            <Menu mnemonicParsing="false" text="Staðsetningar">
-              <items>
-                <MenuItem fx:id="buttonAustur" mnemonicParsing="false" text="Austurland" onAction="#fxFaraAustur"/>
-                <MenuItem fx:id="buttonHofud" mnemonicParsing="false" text="Höfuðborgarsvæðið" onAction="#fxFaraHofud"/>
-                <MenuItem fx:id="buttonNordur" mnemonicParsing="false" text="Norðurland" onAction="#fxFaraNordur"/>
-                <MenuItem fx:id="buttonSudur" mnemonicParsing="false" text="Suðurland" onAction="#fxFaraSudur"/>
-                <MenuItem fx:id="buttonVestur" mnemonicParsing="false" text="Vesturland" onAction="#fxFaraVestur"/>
-              </items>
-            </Menu>
-          <Menu mnemonicParsing="false" text="Hverju má henda">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Ál" />
-                  <MenuItem mnemonicParsing="false" text="Gler" />
-                  <MenuItem mnemonicParsing="false" text="Plast" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Um okkur">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-   </top>
-</BorderPane>
+<MenuBar BorderPane.alignment="CENTER"
+         fx:controller="vidmot.MenuController"
+         xmlns="http://javafx.com/javafx/17.0.12"
+         xmlns:fx="http://javafx.com/fxml/1">
+
+  <menus>
+    <Menu mnemonicParsing="false" text="Telja" onAction="#fxTelja">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Close" />
+      </items>
+
+    </Menu>
+    <Menu mnemonicParsing="false" text="Staðsetningar">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Austurland" onAction="#fxFaraAustur"/>
+        <MenuItem mnemonicParsing="false" text="Höfuðborgarsvæðið" onAction="#fxFaraHofud"/>
+        <MenuItem mnemonicParsing="false" text="Norðurland" onAction="#fxFaraNordur"/>
+        <MenuItem mnemonicParsing="false" text="Suðurland" onAction="#fxFaraSudur"/>
+        <MenuItem mnemonicParsing="false" text="Vesturland" onAction="#fxFaraVestur"/>
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Hverju má henda">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Ál" onAction="#fxTilAl"/>
+        <MenuItem mnemonicParsing="false" text="Gler" onAction="#fxTilGler"/>
+        <MenuItem mnemonicParsing="false" text="Plast" onAction="#fxTilPlast"/>
+      </items>
+    </Menu>
+
+    <Menu mnemonicParsing="false" text="Um okkur">
+      <items>
+        <MenuItem mnemonicParsing="false" text="About" />
+      </items>
+    </Menu>
+
+  </menus>
+</MenuBar>

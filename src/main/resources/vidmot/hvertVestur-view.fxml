@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="vidmot.Menu"
+            fx:controller="vidmot.MenuController"
             prefHeight="400.0" prefWidth="600.0">
 
     <Button fx:id="buttonAustur" mnemonicParsing="false" onAction="#fxFaraAustur" prefHeight="60.0" prefWidth="250.0" text="Greiða">
