@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class StadsetningController {
+public class Menu {
 
     @FXML
     private Button buttonAustur;
@@ -16,6 +16,12 @@ public class StadsetningController {
     private Button buttonSudur;
     @FXML
     private Button buttonVestur;
+    @FXML
+    private Button fxTilAl;
+    @FXML
+    private Button fxTilGler;
+    @FXML
+    private Button fxTilPlast;
 
     public void fxFaraAustur(ActionEvent event) {
         // Fara í Austur
@@ -45,5 +51,20 @@ public class StadsetningController {
         // Fara í Vestur
         ViewSwitcher.switchTo(View.VESTUR);
         System.out.println("Þessi takki fer í Vestur");
+    }
+
+    public void fxTilAl(ActionEvent event) {
+        ViewSwitcher.switchTo(View.ÁL);
+        System.out.println("Þessi takki fer í ál síðuna");
+    }
+
+    public void fxTilGler(ActionEvent event) {
+        ViewSwitcher.switchTo(View.GLER);
+        System.out.println("Þessi takki fer í gler síðuna");
+    }
+
+    public void fxTilPlast(ActionEvent event) {
+        ViewSwitcher.switchTo(View.PLAST);
+        System.out.println("Þessi takki fer í plast síðuna");
     }
 }
