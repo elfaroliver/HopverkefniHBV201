@@ -10,7 +10,7 @@ import java.io.IOException;
 public class FloskurApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(FloskurApplication.class.getResource("floskur-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(FloskurApplication.class.getResource("forsida-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 840, 540);
         stage.setTitle("Flöskumóttaka");
         stage.setScene(scene);

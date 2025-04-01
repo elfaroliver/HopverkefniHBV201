@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class Menu {
+public class MenuController {
 
     @FXML
     private Button buttonAustur;
@@ -66,5 +66,10 @@ public class Menu {
     public void fxTilPlast(ActionEvent event) {
         ViewSwitcher.switchTo(View.PLAST);
         System.out.println("Þessi takki fer í plast síðuna");
+    }
+
+    public void fxTelja(ActionEvent event) {
+        ViewSwitcher.switchTo(View.TELJA);
+        System.out.println("Þessi takki fer í telja síðuna");
     }
 }

@@ -16,6 +16,8 @@ public enum View {
 
     SUDUR("vidmot/hvertSudur-view.fxml"),
 
+    TELJA("vidmot/floskur-view.fxml"),
+
     VESTUR("vidmot/hvertVestur-view.fxml");
 
     private final String fileName;
