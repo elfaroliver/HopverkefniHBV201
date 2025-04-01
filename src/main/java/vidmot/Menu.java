@@ -18,15 +18,15 @@ public class Menu {
     @FXML
     private Button buttonVestur;
     @FXML
-    private MenuItem FaraAustur;
+    private MenuItem faraAustur;
     @FXML
-    private MenuItem FaraHofud;
+    private MenuItem faraHofud;
     @FXML
-    private MenuItem FaraNordur;
+    private MenuItem faraNordur;
     @FXML
-    private MenuItem FaraSudur;
+    private MenuItem faraSudur;
     @FXML
-    private MenuItem FaraVestur;
+    private MenuItem faraVestur;
     @FXML
     private Button fxTilAl;
     @FXML
