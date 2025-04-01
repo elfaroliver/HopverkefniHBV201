@@ -32,3 +32,8 @@
     -fx-border-width: 2;
     -fx-border-style: solid;
 }
+
+/* Bakgrunnslitur á footer */
+.footerVBOX {
+    -fx-background-color: rgb(200,200,200);
+}
