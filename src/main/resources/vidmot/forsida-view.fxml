@@ -4,17 +4,52 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane prefHeight="371.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="371.0" prefWidth="546.0"
+            fx:controller="vidmot.MenuController"
+            xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
  <top>
-    <fx:include source="menu-view.fxml"/>
+     <MenuBar BorderPane.alignment="CENTER"
+              xmlns="http://javafx.com/javafx/17.0.12"
+              xmlns:fx="http://javafx.com/fxml/1">
+
+         <menus>
+             <Menu mnemonicParsing="false" text="Telja">
+                 <items>
+                     <MenuItem mnemonicParsing="false" text="Telja" onAction="#fxTelja"/>
+                 </items>
+             </Menu>
+
+             <Menu mnemonicParsing="false" text="Staðsetningar">
+               <items>
+                 <MenuItem mnemonicParsing="false" text="Austurland" onAction="#fxFaraAustur"/>
+                 <MenuItem mnemonicParsing="false" text="Höfuðborgarsvæðið" onAction="#fxFaraHofud"/>
+                 <MenuItem mnemonicParsing="false" text="Norðurland" onAction="#fxFaraNordur"/>
+                 <MenuItem mnemonicParsing="false" text="Suðurland" onAction="#fxFaraSudur"/>
+                 <MenuItem mnemonicParsing="false" text="Vesturland" onAction="#fxFaraVestur"/>
+               </items>
+             </Menu>
+             <Menu mnemonicParsing="false" text="Hverju má henda">
+               <items>
+                 <MenuItem mnemonicParsing="false" text="Ál" onAction="#fxTilAl"/>
+                 <MenuItem mnemonicParsing="false" text="Gler" onAction="#fxTilGler"/>
+                 <MenuItem mnemonicParsing="false" text="Plast" onAction="#fxTilPlast"/>
+               </items>
+             </Menu>
+
+             <Menu mnemonicParsing="false" text="Um okkur">
+                 <items>
+                     <MenuItem mnemonicParsing="false" text="About" />
+                 </items>
+             </Menu>
+
+         </menus>
+     </MenuBar>
  </top>
+
    <center>
-      <Label alignment="CENTER" prefHeight="58.0" prefWidth="273.0" text="Velkomin í flöskumóttökuna" BorderPane.alignment="CENTER">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
+      <StackPane fx:id="stackPaneCenter" />
    </center>
+
     <bottom>
         <fx:include source="footer.fxml"/>
     </bottom>
