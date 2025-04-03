@@ -39,6 +39,7 @@ public class MenuController {
 
     @FXML
     public void initialize() {
+        // Byrjunar fxml
         setView("velkominn-view.fxml");
     }
 
@@ -54,50 +55,41 @@ public class MenuController {
     public void fxFaraAustur(ActionEvent event) {
         // Fara í Austur
         setView("hvertAustur-view.fxml");
-        System.out.println("Þessi takki fer í Austur");
     }
 
     public void fxFaraHofud(ActionEvent event) {
         // Fara í Höfuðborgarsvæðið
         setView("hvertHofud-view.fxml");
-        System.out.println("Þessi takki fer í Höfuðborgarsvæðið");
     }
 
     public void fxFaraNordur(ActionEvent event) {
         // Fara í Norður
         setView("hvertNordur-view.fxml");
-        System.out.println("Þessi takki fer í Norður");
     }
 
     public void fxFaraSudur(ActionEvent event) {
         // Fara í Suður
         setView("hvertSudur-view.fxml");
-        System.out.println("Þessi takki fer í Suður");
     }
 
     public void fxFaraVestur(ActionEvent event) {
         // Fara í Vestur
         setView("hvertVestur-view.fxml");
-        System.out.println("Þessi takki fer í Vestur");
     }
 
     public void fxTilAl(ActionEvent event) {
         setView("maSkilaAl-view.fxml");
-        System.out.println("Þessi takki fer í ál síðuna");
     }
 
     public void fxTilGler(ActionEvent event) {
         setView("maSkilaGler-view.fxml");
-        System.out.println("Þessi takki fer í gler síðuna");
     }
 
     public void fxTilPlast(ActionEvent event) {
         setView("maSkilaPlast-view.fxml");
-        System.out.println("Þessi takki fer í plast síðuna");
     }
 
     public void fxTelja(ActionEvent event) {
         setView("floskur-view.fxml");
-        System.out.println("Þessi takki fer í telja síðuna");
     }
 }
