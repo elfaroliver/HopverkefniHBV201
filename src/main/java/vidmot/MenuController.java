@@ -39,7 +39,6 @@ public class MenuController {
 
     @FXML
     public void initialize() {
-        // Load default view on app start
         setView("velkominn-view.fxml");
     }
 
