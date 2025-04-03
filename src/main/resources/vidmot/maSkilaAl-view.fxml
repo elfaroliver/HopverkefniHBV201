@@ -12,39 +12,14 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.AlController">
-   <children>
-      <BorderPane layoutX="20.0" layoutY="20.0">
-         <top>
-            <MenuBar prefHeight="25.0" prefWidth="368.0" BorderPane.alignment="CENTER">
-               <menus>
-                  <Menu mnemonicParsing="false" text="Telja">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="Close" />
-                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Staðsetningar">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="Delete" />
-                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Hverju má henda">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="About" />
-                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Um okkur">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="Close" />
-                     </items>
-                  </Menu>
-               </menus>
-            </MenuBar>
-         </top>
-         <center>
-            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+<?import javafx.scene.layout.StackPane?>
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Label text="ÁL" />
+                  <Label text="Ál" />
                   <SplitPane dividerPositions="0.5" prefHeight="160.0" prefWidth="200.0">
                      <items>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
@@ -69,15 +44,9 @@
                         </AnchorPane>
                      </items>
                   </SplitPane>
-                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
-                     <buttons>
-                        <Button mnemonicParsing="false" text="Gler" />
-                        <Button mnemonicParsing="false" text="Plast" />
-                     </buttons>
-                  </ButtonBar>
                </children>
             </VBox>
-         </center>
-      </BorderPane>
-   </children>
-</AnchorPane>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

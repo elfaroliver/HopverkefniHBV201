@@ -36,7 +36,8 @@ public class FloskurController /*implements Initializable*/ {
     private Label greidaEinn;
     @FXML
     private Label greidaTveir;
-
+    @FXML
+    public Button buttonGreida;
     @FXML
     public Button buttonHreinsa;
 
