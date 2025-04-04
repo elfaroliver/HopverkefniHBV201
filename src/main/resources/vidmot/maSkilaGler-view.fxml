@@ -5,7 +5,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+           fx:controller="vidmot.GlerController"
+           xmlns="http://javafx.com/javafx/17.0.12"
+           xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
          <children>
@@ -80,9 +83,9 @@
             </SplitPane>
             <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0">
                <children>
-                  <Button minHeight="25.0" minWidth="50.0" mnemonicParsing="false" text="ÁL" />
+                  <Button minHeight="25.0" minWidth="50.0" mnemonicParsing="false" text="ÁL" onAction="#tilAlButton"/>
                   <Region HBox.hgrow="ALWAYS" />
-                  <Button minHeight="25.0" minWidth="50.0" mnemonicParsing="false" text="Plast" />
+                  <Button minHeight="25.0" minWidth="50.0" mnemonicParsing="false" text="Plast" onAction="#tilPlastButton"/>
                </children>
                <VBox.margin>
                   <Insets top="10.0" />

@@ -1,7 +1,7 @@
 module vidmot {
     requires javafx.controls;
     requires javafx.fxml;
-    requires java.xml;
+    requires java.desktop;
 
     opens vidmot to javafx.fxml;
     exports vidmot;

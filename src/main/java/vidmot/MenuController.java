@@ -43,7 +43,7 @@ public class MenuController {
         setView("velkominn-view.fxml");
     }
 
-    private void setView(String fxmlFile) {
+    public void setView(String fxmlFile) {
         try {
             Node view = FXMLLoader.load(getClass().getResource(fxmlFile));
             stackPaneCenter.getChildren().setAll(view);
