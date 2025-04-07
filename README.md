@@ -23,8 +23,20 @@ eða sækja kóða sem .zip skrá og afþjappa skrá.
 cd ../HopverkefniHBV201
 ```
 
-#### 3. Eftir það er hægt að keyra forrit með eftirfarandi Maven skipun:
+#### 3. Hægt er að keyra forritið með eftirfarandi skipun, ef Maven er uppsett:
 ```bash
-mvn clean javafx:compile
+mvn compile
 mvn javafx:run
+```
+---
+*Maven uppsetning:*
+```bash
+# Windows
+choco install maven
+
+# Debian/Ubuntu
+sudo apt install maven
+
+# MacOS
+brew install maven
 ```
