@@ -13,10 +13,8 @@ JavaFX forrit byggt með Maven.
 #### 1. Sækja kóðann
 ```bash
 git clone https://github.com/elfaroliver/HopverkefniHBV201.git
-
-eða sækja kóða sem .zip skrá og afþjappa skrá.
-(Download ZIP)
 ```
+(eða sækja kóða sem .zip skrá og afþjappa skrá (Download ZIP))
 
 #### 2. Síðan er hægt að keyra forrit frá skipannalínu með því að fara inn í möppuna
 ```bash
