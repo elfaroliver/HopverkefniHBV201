@@ -3,8 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
 
-
-<Label text="vELKOMINN Í FLÖSKUMÓTTÖKUNA!" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<Label text="VELKOMINN Í FLÖSKUMÓTTÖKUNA!" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
    <font>
       <Font size="24.0" />
    </font>
