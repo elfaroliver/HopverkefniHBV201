@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -17,6 +18,29 @@ public class MenuController {
     private StackPane stackPaneCenter;
 
     @FXML
+    private Button buttonHofud;
+    @FXML
+    private Button buttonNordur;
+    @FXML
+    private Button buttonSudur;
+    @FXML
+    private Button buttonVestur;
+    @FXML
+    private MenuItem faraAustur;
+    @FXML
+    private MenuItem faraHofud;
+    @FXML
+    private MenuItem faraNordur;
+    @FXML
+    private MenuItem faraSudur;
+    @FXML
+    private MenuItem faraVestur;
+    @FXML
+    private Button fxTilAl;
+    @FXML
+    private Button fxTilGler;
+    @FXML
+    private Button fxTilPlast;
     public void initialize() {
         // Byrjunar fxml
         setView("velkominn-view.fxml");
