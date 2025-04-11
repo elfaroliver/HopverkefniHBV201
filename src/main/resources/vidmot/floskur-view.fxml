@@ -52,6 +52,27 @@
     </VBox.margin>
   </HBox>
 
+    <HBox fx:id="glerHBox" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="704.0">
+        <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Glerflöskur">
+            <HBox.margin>
+                <Insets right="20.0" />
+            </HBox.margin>
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <TextField fx:id="textFieldGler" styleClass="textField" onAction="#onGler" prefHeight="60.0" prefWidth="250.0" promptText="Sláðu inn tölu">
+            <HBox.margin>
+                <Insets right="20.0" />
+            </HBox.margin></TextField>
+        <Label fx:id="glerLabel" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <VBox.margin>
+            <Insets right="10.0" />
+        </VBox.margin>
+    </HBox>
+
   <HBox fx:id="samtalsHBox" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="704.0">
       <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Samtals">
         <HBox.margin>

@@ -6,10 +6,16 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import vinnsla.Floskur;
 
 public class FloskurController /*implements Initializable*/ {
     private final Floskur floskur = new Floskur();
+
+    @FXML
+    private Label glerLabel;
+    @FXML
+    private TextField textFieldGler;
 
     private int samtalsFjoldi = 0;
     private int samtalsVirdi = 0;
@@ -120,6 +126,40 @@ public class FloskurController /*implements Initializable*/ {
 
         }
     }
+    @FXML
+    protected void onGler(ActionEvent event) {
+        try {
+            int fjoldiF = Integer.parseInt(textFieldGler.getText());
+            if (fjoldiF < 0) {
+                throw new NumberFormatException();
+            }
+            int heildGler= Integer.parseInt(glerLabel.getText());
+
+            textFieldGler.getStyleClass().removeAll("text-field-error");
+            textFieldGler.getStyleClass().add("text-field-valid");
+
+            int gamlaGildi = floskur.getISKFloskur();
+
+            floskur.setFjoldiFloskur(fjoldiF);
+            glerLabel.setText(String.valueOf(heildGler + fjoldiF));
+
+            samtalsFjoldi += fjoldiF;
+
+            int nyjaGildi = floskur.getISKFloskur();
+            samtalsVirdi += nyjaGildi - gamlaGildi;
+
+            samtalsEinn.setText(samtalsVirdi + "kr");
+            samtalsTveir.setText(String.valueOf(samtalsFjoldi));
+
+            textFieldGler.clear();
+        }
+        catch (Exception e) {
+            textFieldGler.getStyleClass().removeAll("text-field-valid");
+            textFieldGler.getStyleClass().add("text-field-error");
+            textFieldGler.clear();
+
+        }
+    }
 
     /**
      * Handler til að greiða fyrir flöskur og dósir.
@@ -154,4 +194,5 @@ public class FloskurController /*implements Initializable*/ {
         samtalsFjoldi = 0;
         samtalsVirdi = 0;
     }
+
 }

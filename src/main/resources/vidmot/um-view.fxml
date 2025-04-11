@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="vidmot.UmView"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true:">
+                           <image>
+                              <Image url="https://scontent.frkv2-1.fna.fbcdn.net/v/t39.30808-6/286023920_10220522237862895_5169559804652397615_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=6ee11a&amp;_nc_ohc=bAjQ3ihfiS4Q7kNvwFMZ49D&amp;_nc_oc=AdmT9p2gsH7WEyY91o0Q-fnMDcQjH01HrQHFwtIrPpvBtFD60Mp1jEelLnZ1q-V-X4c&amp;_nc_zt=23&amp;_nc_ht=scontent.frkv2-1.fna&amp;_nc_gid=Aqp_aRCddupXstyYG2EEVA&amp;oh=00_AfHM8lVCoacNEpnTEB9igOktk6tr-Na8-Ab56QWlr6yk3g&amp;oe=67FEBDEC" />
+                           </image>
+                        </ImageView>
+                        <Label text="Git">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Nafn">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="E-mail">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="https://scontent.frkv2-1.fna.fbcdn.net/v/t39.30808-6/286023920_10220522237862895_5169559804652397615_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=6ee11a&amp;_nc_ohc=bAjQ3ihfiS4Q7kNvwFMZ49D&amp;_nc_oc=AdmT9p2gsH7WEyY91o0Q-fnMDcQjH01HrQHFwtIrPpvBtFD60Mp1jEelLnZ1q-V-X4c&amp;_nc_zt=23&amp;_nc_ht=scontent.frkv2-1.fna&amp;_nc_gid=Aqp_aRCddupXstyYG2EEVA&amp;oh=00_AfHM8lVCoacNEpnTEB9igOktk6tr-Na8-Ab56QWlr6yk3g&amp;oe=67FEBDEC" />
+                           </image>
+                        </ImageView>
+                        <Label text="Git">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Nafn">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="E-mail">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
