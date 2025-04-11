@@ -11,7 +11,7 @@ public class FloskurApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(FloskurApplication.class.getResource("forsida-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 840, 540);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 450);
         stage.setTitle("Flöskumóttaka");
         stage.setScene(scene);
         stage.show();
