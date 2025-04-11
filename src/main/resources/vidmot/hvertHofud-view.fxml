@@ -1,57 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="vidmot.MenuController"
-            prefHeight="400.0" prefWidth="600.0">
 
-    <Button fx:id="buttonAustur" mnemonicParsing="false" onAction="#fxFaraAustur" prefHeight="60.0" prefWidth="250.0" text="Greiða">
-        <HBox.margin>
-            <Insets right="20.0" />
-        </HBox.margin>
-        <font>
-            <Font size="18.0" />
-        </font>
-    </Button>
-    <!--<Button fx:id="buttonHofud" mnemonicParsing="false" onAction="#fxFaraHofud" prefHeight="60.0" prefWidth="250.0" text="Greiða">
-        <HBox.margin>
-            <Insets right="20.0" />
-        </HBox.margin>
-        <font>
-            <Font size="18.0" />
-        </font>
-    </Button>-->
-    <Button fx:id="buttonNordur" mnemonicParsing="false" onAction="#fxFaraNordur" prefHeight="60.0" prefWidth="250.0" text="Greiða">
-        <HBox.margin>
-            <Insets right="20.0" />
-        </HBox.margin>
-        <font>
-            <Font size="18.0" />
-        </font>
-    </Button>
-    <Button fx:id="buttonSudur" mnemonicParsing="false" onAction="#fxFaraSudur" prefHeight="60.0" prefWidth="250.0" text="Greiða">
-        <HBox.margin>
-            <Insets right="20.0" />
-        </HBox.margin>
-        <font>
-            <Font size="18.0" />
-        </font>
-    </Button>
-    <Button fx:id="buttonVestur" mnemonicParsing="false" onAction="#fxFaraVestur" prefHeight="60.0" prefWidth="250.0" text="Greiða">
-        <HBox.margin>
-            <Insets right="20.0" />
-        </HBox.margin>
-        <font>
-            <Font size="18.0" />
-        </font>
-    </Button>
-
-</AnchorPane>
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="400.0" stylesheets="@css/floskur.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.WebStadsetningarController">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hvertHbox">
+            <children>
+                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="300.0">
+                    <children>
+                        <Label text="Knarravogur 4, 104 Reykjavík">
+                            <VBox.margin>
+                                <Insets bottom="20.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label text="Mán - fös: 10-18    Lau: 11:45 - 16:30">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets right="20.0" />
+                    </padding>
+                </VBox>
+                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#openHofud" text="Sjá staðsetningu" styleClass="hvertButton">
+                            <VBox.margin>
+                                <Insets bottom="12.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Label text="Label" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hvertHbox">
+         <children>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="300.0">
+               <children>
+                  <Label text="Köllunarklettsvegur 4, 104 Reykjavík">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Mán - fös: 10-18    Lau: 11:45 - 16:30">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#openHofud1" text="Sjá staðsetningu" styleClass="hvertButton">
+                     <VBox.margin>
+                        <Insets bottom="12.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label text="Label" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hvertHbox">
+         <children>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="300.0">
+               <children>
+                  <Label text="Dalvegur 28, 200 Kópavogur">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Mán - fös: 10-18    Lau: 11:45 - 16:30">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#openHofud2" text="Sjá staðsetningu" styleClass="hvertButton">
+                     <VBox.margin>
+                        <Insets bottom="12.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label text="Label" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hvertHbox">
+         <children>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="300.0">
+               <children>
+                  <Label text="Skútahraun 11, 220 Hafnarfjörður">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Mán - fös: 10-18    Lau: 11:45 - 16:30">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#openHofud3" text="Sjá staðsetningu" styleClass="hvertButton">
+                     <VBox.margin>
+                        <Insets bottom="12.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label text="Label" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+    </children>
+</VBox>

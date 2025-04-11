@@ -19,6 +19,9 @@
                <Font size="18.0" />
             </font></Label>
          <TextField fx:id="textFieldDosir" styleClass="textField" onAction="#onDosir" prefHeight="60.0" prefWidth="250.0" promptText="Sláðu inn tölu">
+             <tooltip>
+                 <Tooltip text="Ýttu á Enter"/>
+             </tooltip>
             <HBox.margin>
                <Insets right="20.0" />
             </HBox.margin></TextField>
@@ -40,6 +43,9 @@
             <Font size="18.0" />
          </font></Label>
       <TextField fx:id="textFieldFloskur" styleClass="textField" onAction="#onFloskur" prefHeight="60.0" prefWidth="250.0" promptText="Sláðu inn tölu">
+          <tooltip>
+              <Tooltip text="Ýttu á Enter"/>
+          </tooltip>
         <HBox.margin>
           <Insets right="20.0" />
         </HBox.margin></TextField>
