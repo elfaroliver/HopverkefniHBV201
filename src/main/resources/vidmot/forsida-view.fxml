@@ -38,7 +38,7 @@
 
              <Menu mnemonicParsing="false" text="Um okkur">
                  <items>
-                     <MenuItem mnemonicParsing="false" text="About" />
+                     <MenuItem mnemonicParsing="false" text="Um Okkur" onAction="#fxUm"/>
                  </items>
              </Menu>
 

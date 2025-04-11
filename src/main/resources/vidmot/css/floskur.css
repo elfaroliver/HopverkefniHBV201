@@ -37,3 +37,7 @@
 .footerVBOX {
     -fx-background-color: rgb(200,200,200);
 }
+
+.hvertHbox {
+    -fx-border-color: transparent transparent black transparent;
+}
