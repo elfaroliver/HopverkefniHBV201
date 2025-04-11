@@ -15,27 +15,6 @@ public class MenuController {
 
     @FXML
     private StackPane stackPaneCenter;
-    @FXML
-    private BorderPane rootBorderPane;
-    @FXML
-    private VBox centerVBox;
-
-    @FXML
-    private Button buttonAustur;
-    @FXML
-    private Button buttonHofud;
-    @FXML
-    private Button buttonNordur;
-    @FXML
-    private Button buttonSudur;
-    @FXML
-    private Button buttonVestur;
-    @FXML
-    private Button fxTilAl;
-    @FXML
-    private Button fxTilGler;
-    @FXML
-    private Button fxTilPlast;
 
     @FXML
     public void initialize() {
@@ -91,5 +70,9 @@ public class MenuController {
 
     public void fxTelja(ActionEvent event) {
         setView("floskur-view.fxml");
+    }
+
+    public void fxUm(ActionEvent event) {
+        setView("um-view.fxml");
     }
 }
