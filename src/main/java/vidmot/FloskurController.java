@@ -188,8 +188,10 @@ public class FloskurController /*implements Initializable*/ {
         floskur.hreinsa();
         textFieldDosir.clear();
         textFieldFloskur.clear();
+        textFieldGler.clear();
         dosirLabel.setText("0");
         floskurLabel.setText("0");
+        glerLabel.setText("0");
         samtalsEinn.setText("0");
         samtalsTveir.setText("0");
         samtalsFjoldi = 0;
