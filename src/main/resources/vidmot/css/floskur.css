@@ -41,3 +41,7 @@
 .hvertHbox {
     -fx-border-color: transparent transparent black transparent;
 }
+
+.hvertButton:hover {
+    -fx-background-color: rgb(130, 224, 170);
+}
