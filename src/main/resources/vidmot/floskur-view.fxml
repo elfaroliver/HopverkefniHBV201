@@ -11,7 +11,7 @@
   </padding>
 
    <HBox fx:id="dosirHBox" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="704.0">
-         <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Dósir">
+         <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Dósir" style="-fx-padding: 0 0 0 5;">
             <HBox.margin>
                <Insets right="20.0" />
             </HBox.margin>
@@ -25,7 +25,7 @@
             <HBox.margin>
                <Insets right="20.0" />
             </HBox.margin></TextField>
-        <Label fx:id="dosirLabel" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+        <Label fx:id="dosirLabel" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0" style="-fx-padding: 0 0 0 5;">
          <font>
             <Font size="18.0" />
          </font></Label>
@@ -35,7 +35,7 @@
    </HBox>
 
   <HBox fx:id="floskurHBox" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="704.0">
-      <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Flöskur">
+      <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Flöskur" style="-fx-padding: 0 0 0 5;">
         <HBox.margin>
           <Insets right="20.0" />
         </HBox.margin>
@@ -49,7 +49,7 @@
         <HBox.margin>
           <Insets right="20.0" />
         </HBox.margin></TextField>
-      <Label fx:id="floskurLabel" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+      <Label fx:id="floskurLabel" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0" style="-fx-padding: 0 0 0 5;">
          <font>
             <Font size="18.0" />
          </font></Label>
@@ -59,7 +59,7 @@
   </HBox>
 
     <HBox fx:id="glerHBox" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="704.0">
-        <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Glerflöskur">
+        <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Glerflöskur" style="-fx-padding: 0 0 0 5;" >
             <HBox.margin>
                 <Insets right="20.0" />
             </HBox.margin>
@@ -70,7 +70,7 @@
             <HBox.margin>
                 <Insets right="20.0" />
             </HBox.margin></TextField>
-        <Label fx:id="glerLabel" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+        <Label fx:id="glerLabel" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0" style="-fx-padding: 0 0 0 5;">
             <font>
                 <Font size="18.0" />
             </font></Label>
@@ -80,21 +80,21 @@
     </HBox>
 
   <HBox fx:id="samtalsHBox" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="704.0">
-      <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Samtals">
+      <Label prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="Samtals" style="-fx-padding: 0 0 0 5;">
         <HBox.margin>
           <Insets right="20.0" />
         </HBox.margin>
          <font>
             <Font size="18.0" />
          </font></Label>
-      <Label fx:id="samtalsEinn" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+      <Label fx:id="samtalsEinn" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0" style="-fx-padding: 0 0 0 5;">
         <HBox.margin>
           <Insets right="20.0" />
         </HBox.margin>
          <font>
             <Font size="18.0" />
          </font></Label>
-      <Label fx:id="samtalsTveir" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+      <Label fx:id="samtalsTveir" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0" style="-fx-padding: 0 0 0 5;">
          <font>
             <Font size="18.0" />
          </font></Label>
@@ -112,14 +112,14 @@
             <Font size="18.0" />
          </font>
          </Button>
-      <Label fx:id="greidaEinn" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+      <Label fx:id="greidaEinn" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0" style="-fx-padding: 0 0 0 5;">
         <HBox.margin>
           <Insets right="20.0" />
         </HBox.margin>
          <font>
             <Font size="18.0" />
          </font></Label>
-      <Label fx:id="greidaTveir" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0">
+      <Label fx:id="greidaTveir" prefHeight="60.0" prefWidth="250.0" styleClass="labels" text="0" style="-fx-padding: 0 0 0 5;">
          <font>
             <Font size="18.0" />
          </font></Label>

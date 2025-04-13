@@ -23,7 +23,7 @@
                      <children>
                         <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
                            <children>
-                              <Label text="MEÐ SKILAGJALDI" textFill="#7aff2c">
+                              <Label text="MEÐ SKILAGJALDI" textFill="#4cbb17">
                                  <font>
                                     <Font name="System Bold" size="24.0" />
                                  </font>
