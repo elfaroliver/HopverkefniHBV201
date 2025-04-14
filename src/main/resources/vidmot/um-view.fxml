@@ -22,17 +22,17 @@
                               <Image url="https://scontent.frkv2-1.fna.fbcdn.net/v/t39.30808-6/286023920_10220522237862895_5169559804652397615_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=6ee11a&amp;_nc_ohc=bAjQ3ihfiS4Q7kNvwFMZ49D&amp;_nc_oc=AdmT9p2gsH7WEyY91o0Q-fnMDcQjH01HrQHFwtIrPpvBtFD60Mp1jEelLnZ1q-V-X4c&amp;_nc_zt=23&amp;_nc_ht=scontent.frkv2-1.fna&amp;_nc_gid=Aqp_aRCddupXstyYG2EEVA&amp;oh=00_AfHM8lVCoacNEpnTEB9igOktk6tr-Na8-Ab56QWlr6yk3g&amp;oe=67FEBDEC" />
                            </image>
                         </ImageView>
-                        <Label text="elfaroliver">
+                        <Label text="Github: elfaroliver">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
                         </Label>
-                        <Label text="Elfar Oliver">
+                        <Label text="Nafn: Elfar Oliver">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
                         </Label>
-                        <Label text="eos35@hi.is">
+                        <Label text="E-mail: eos35@hi.is">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
@@ -46,17 +46,17 @@
                               <Image url="https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-1/463908037_8523482091093308_3686415514225105613_n.jpg?stp=dst-jpg_s320x320_tt6&amp;_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=e99d92&amp;_nc_ohc=BwNwEAWsMOMQ7kNvwF7ZYUr&amp;_nc_oc=Adn9mP2Vk_MSPCngBDQQnx4uO3Q7-845E89b5TFQ_qrPnmmo5vV1GLwxbGq6v6EByFc&amp;_nc_zt=24&amp;_nc_ht=scontent-mxp2-1.xx&amp;_nc_gid=-clJwkotQGXLnsX7OBwMVQ&amp;oh=00_AfH_2EfwHg6e2WXmHTZLhQ4OQ1cYPyn4iJYyvn2LS4NofQ&amp;oe=68031718" />
                            </image>
                         </ImageView>
-                        <Label text="0xFEE1DEAD2">
+                        <Label text="Github: 0xFEE1DEAD2">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
                         </Label>
-                        <Label text="Veigar Ágúst">
+                        <Label text="Nafn: Veigar Ágúst">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
                         </Label>
-                        <Label text="vah29@hi.is">
+                        <Label text="E-mail: vah29@hi.is">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
