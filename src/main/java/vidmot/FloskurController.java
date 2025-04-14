@@ -2,12 +2,14 @@ package vidmot;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.util.Pair;
 import vinnsla.Floskur;
+
+import java.util.Optional;
 
 public class FloskurController /*implements Initializable*/ {
     private final Floskur floskur = new Floskur();
@@ -175,6 +177,49 @@ public class FloskurController /*implements Initializable*/ {
 
         greidaEinn.setText(greidaVerd + "kr");
         greidaTveir.setText(String.valueOf(greidaFjoldi));
+
+        opna();
+    }
+
+    /**
+     * Dialogið sem greiðslutakkinn opnar fyrir bankainfo
+     * Uppsetningin er öfug miðað við útlit. Fyrst eru takkarnir settir upp og svo eru
+     * textfields uppsett
+     */
+    public void opna() {
+        Dialog<Pair<String, String>> dialog = new Dialog<>();
+        dialog.setTitle("Greiðsla");
+        dialog.setHeaderText("Gefðu okkur upplýsingarnar þínar fyrir þessum " + greidaVerd + " kr");
+
+        // Senda og Cancel takkar
+        ButtonType loginButtonType = new ButtonType("Senda", ButtonBar.ButtonData.OK_DONE);
+        dialog.getDialogPane().getButtonTypes().addAll(loginButtonType, ButtonType.CANCEL);
+
+        // Textfields með ljósgráuinfo/prompti
+        TextField kennitala = new TextField();
+        kennitala.setPromptText("Kennitala, xxxxxx-xxxx");
+        TextField banki = new TextField();
+        banki.setPromptText("Bankareikningur, xxxx-xx-xxxxxx");
+
+        // VBox af þessum tvem textfields
+        dialog.getDialogPane().setContent(new VBox(10, kennitala, banki));
+
+        // Þetta gerir svosem ekkert nema gefa sout eitthvað til að prenta
+        dialog.setResultConverter(dialogButton -> {
+            if (dialogButton == loginButtonType) {
+                return new Pair<>(kennitala.getText(), banki.getText());
+            }
+            return null;
+        });
+
+        Optional<Pair<String, String>> result = dialog.showAndWait();
+
+        // Prentar bara í IntelliJ, gamla góða insanitycheck
+        result.ifPresent(pair -> {
+            System.out.println("Kennitala: " + pair.getKey());
+            System.out.println("Bankareikningur: " + pair.getValue());
+        });
+
     }
 
     /**
