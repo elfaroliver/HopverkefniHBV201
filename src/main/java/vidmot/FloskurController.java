@@ -204,7 +204,7 @@ public class FloskurController /*implements Initializable*/ {
         // VBox af þessum tvem textfields
         dialog.getDialogPane().setContent(new VBox(10, kennitala, banki));
 
-        // Þetta gerir svosem ekkert nema gefa sout eitthvað til að prenta, held ég
+        // Þetta gerir svosem ekkert nema gefa sout eitthvað til að prenta
         dialog.setResultConverter(dialogButton -> {
             if (dialogButton == loginButtonType) {
                 return new Pair<>(kennitala.getText(), banki.getText());
