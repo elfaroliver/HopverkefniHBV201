@@ -1,0 +1,53 @@
+Veigar Ágúst | 2025-04-13 | Merge pull request #9 from elfaroliver/elfbranch
+Elfar Oliver Sigurðarson | 2025-04-13 | Indentaði textann aðeins í floskur-view svo það væri ekki klesst við border, lagaði ljótara Vbox í Um og lagaði að footerinn væri bara hálfur í Um, breytti græna litnum í týpunum(fannst hann bara aðeins of skær/neon), setti Dominos númerið á allar stöðvarnar
+Elfar Oliver Sigurðarson | 2025-04-13 | Conclude merge samkvæmt terminal?
+Elfar Oliver Sigurðarson | 2025-04-11 | Eyddi menu-view sem ég skil ekki hvaðan kom. MenuController er ennþá í forsida-view. Uppfærði clear o.fl. fyrir gler í FloskurController
+Veigar Ágúst | 2025-04-11 | Merge pull request #8 from elfaroliver/elfbranch
+Elfar Oliver Sigurðarson | 2025-04-11 | Resolved merge conflicts between elfbranch and main
+Elfar Oliver Sigurðarson | 2025-04-11 | Geyma glerviðbót í telja
+Elfar Oliver Sigurðarson | 2025-04-11 | Búinn að pulla nýjasta Veigars og er að pusha mínu, pusha öllu saman sýnist mér
+Elfar Oliver Sigurðarson | 2025-04-11 | Um okkur hálfnaðish
+Elfar Oliver Sigurðarson | 2025-04-11 | Merge pull request #7 from elfaroliver/hvertLagfæringar
+MonSteroids | 2025-04-11 | Lagaði smá útlit og bætti við tooltip í telja
+Elfar Oliver Sigurðarson | 2025-04-11 | Merge pull request #6 from elfaroliver/umokkur
+MonSteroids | 2025-04-11 | Bætti við Um okkur, veit bara ekki alveg hvað við eigum að skrifa í það. Og tók eitthvað smá út sem þarf ekki, bætti við bordeline í hvert.
+Elfar Oliver Sigurðarson | 2025-04-10 | Bætti fjórum staðsetningum per landshluta með Google Maps link í WebStController og í fxml skjölin. Allir takkar virka og beina á rétta stöð(annað en á endurvinnslunni) og eyddi tökkum úr gler, plast, ál
+Elfar Oliver Sigurðarson | 2025-04-09 | Merge pull request #5 from elfaroliver/webview
+MonSteroids | 2025-04-09 | WebView bætt við, fyrir staðsetningar
+Veigar Ágúst | 2025-04-09 | Update README.md
+Veigar Ágúst | 2025-04-07 | Update README.md
+Veigar Ágúst | 2025-04-05 | Update README.md
+Veigar Ágúst | 2025-04-05 | Update README.md
+Veigar Ágúst | 2025-04-05 | Update README.md
+Veigar Ágúst | 2025-04-05 | Update README.md
+Veigar Ágúst | 2025-04-05 | Update README.md
+Veigar Ágúst | 2025-04-05 | Update README.md
+Veigar Ágúst | 2025-04-05 | Create README.md
+Elfar Oliver Sigurðarson | 2025-04-04 | Setti Hboxin inní Vbox svo þau væru ekki stacked og núna hafa allir landshlutar 4 staðsetningar
+Elfar Oliver Sigurðarson | 2025-04-04 | Merge pull request #4 from elfaroliver/maSkila
+MonSteroids | 2025-04-04 | UI klárt fyrir maSkila glugga
+MonSteroids | 2025-04-04 | Laga AnchorPane, labels
+MonSteroids | 2025-04-04 | Bætti við buttons í maSkila...fxml
+Veigar Ágúst | 2025-04-04 | Merge pull request #3 from elfaroliver/lagfæringar
+0xFEE1DEAD2 | 2025-04-04 | Tók út BorderPane í -view.fxml skjölum, þurfum það ekki
+Elfar Oliver Sigurðarson | 2025-04-03 | Virkni komin í alla landshluta og flöskutýpur, þarf bara að fínpússa í SceneBuilder
+Elfar Oliver Sigurðarson | 2025-04-03 | Merge pull request #2 from elfaroliver/viewswitch
+Veigar Ágúst | 2025-04-03 | Update MenuController.java
+Veigar Ágúst | 2025-04-03 | Update MenuController.java
+0xFEE1DEAD2 | 2025-04-03 | StackPane virkni löguð
+0xFEE1DEAD2 | 2025-04-03 | StackPane virkni löguð
+0xFEE1DEAD2 | 2025-04-03 | forsida-view.fxml StackPane
+Elfar Oliver Sigurðarson | 2025-04-01 | Conflictið kom með, búinn að eyða því. Mæli með að yfirfara
+Elfar Oliver Sigurðarson | 2025-04-01 | Merge pull request #1 from elfaroliver/footerOgForsida
+MonSteroids | 2025-04-01 | Bætti við footer og lagaði tengingar fyrir menu bar
+Elfar Oliver Sigurðarson | 2025-04-01 | Sjá fyrra commit, breytti bara nöfnunum á tilviksbreytunum
+Elfar Oliver Sigurðarson | 2025-04-01 | Menu ætti að virka núna. Bætti private MenuItem tilviksbreytum og tengdi þau við staðsetningartakkana
+Elfar Oliver Sigurðarson | 2025-04-01 | Reyndi að bæta við tökkum í Menu, virkar kannski
+Elfar Oliver Sigurðarson | 2025-04-01 | Eyddi controllers fyrir týpur, breyttum staðsetningar í Menu, viljum hafa fleiri fxml frekar en Controllers
+Elfar Oliver Sigurðarson | 2025-03-20 | Bætti við heimasida-view.fxml
+Elfar Oliver Sigurðarson | 2025-03-20 | Bætti við StadsetningController til að hafa Staðsetningartakka sem á eftir að hanna. Setti takkana líka í viðeigandi  FXML skjöl. View.java inniheldur núna flöskutýpur og staðsetningar
+Elfar Oliver Sigurðarson | 2025-03-17 | Updateaði fx:controller í Plast, Gler, Ál
+elfaroliver | 2025-03-17 | Bjó til Controllera fyrir HvaðMáFlokka síðurnar, bjó til View og ViewSwitcher, tók takka functionin mín úr Viðtal og setti bara það í Controllerana og fínpússaði nöfnin útfrá View
+elfaroliver | 2025-03-17 | Bjó til öll fxml skjöl miðað við teikningarnar fyrir utan Vestfirði 'cause fuck 'em
+elfaroliver | 2025-03-17 | Second commit
+elfaroliver | 2025-03-17 | First commit
