@@ -200,50 +200,38 @@ public class FloskurController /*implements Initializable*/ {
      * textfields uppsett
      */
     public void opna() {
-        /*if (greidaVerd == 0) {
-            TextInputDialog d = new TextInputDialog();
+        Dialog<Pair<String, String>> dialog = new Dialog<>();
+        dialog.setTitle("Greiðsla");
+        dialog.setHeaderText("Gefðu okkur upplýsingarnar þínar fyrir þessum " + greidaVerd + " kr");
 
-            // Settur titill og haus
-            d.setTitle("Upphæð vantar");
-            d.setHeaderText("Vinsamlegast sláðu inn fjölda áldósa, plastflaskna, og/eða glerflaskna");
-            // Einfaldur texti sem meginmál
-            d.setContentText("Nafn:");
+        // Senda og Cancel takkar
+        ButtonType loginButtonType = new ButtonType("Senda", ButtonBar.ButtonData.OK_DONE);
+        dialog.getDialogPane().getButtonTypes().addAll(loginButtonType, ButtonType.CANCEL);
 
-        } else {*/
-            Dialog<Pair<String, String>> dialog = new Dialog<>();
-            dialog.setTitle("Greiðsla");
-            dialog.setHeaderText("Gefðu okkur upplýsingarnar þínar fyrir þessum " + greidaVerd + " kr");
+        // Textfields með ljósgráuinfo/prompti
+        TextField kennitala = new TextField();
+        kennitala.setPromptText("Kennitala, xxxxxx-xxxx");
+        TextField banki = new TextField();
+        banki.setPromptText("Bankareikningur, xxxx-xx-xxxxxx");
 
-            // Senda og Cancel takkar
-            ButtonType loginButtonType = new ButtonType("Senda", ButtonBar.ButtonData.OK_DONE);
-            dialog.getDialogPane().getButtonTypes().addAll(loginButtonType, ButtonType.CANCEL);
+        // VBox af þessum tvem textfields
+        dialog.getDialogPane().setContent(new VBox(10, kennitala, banki));
 
-            // Textfields með ljósgráuinfo/prompti
-            TextField kennitala = new TextField();
-            kennitala.setPromptText("Kennitala, xxxxxx-xxxx");
-            TextField banki = new TextField();
-            banki.setPromptText("Bankareikningur, xxxx-xx-xxxxxx");
+        // Þetta gerir svosem ekkert nema gefa sout eitthvað til að prenta
+        dialog.setResultConverter(dialogButton -> {
+            if (dialogButton == loginButtonType) {
+                return new Pair<>(kennitala.getText(), banki.getText());
+            }
+            return null;
+        });
 
-            // VBox af þessum tvem textfields
-            dialog.getDialogPane().setContent(new VBox(10, kennitala, banki));
+        Optional<Pair<String, String>> result = dialog.showAndWait();
 
-            // Þetta gerir svosem ekkert nema gefa sout eitthvað til að prenta
-            dialog.setResultConverter(dialogButton -> {
-                if (dialogButton == loginButtonType) {
-                    return new Pair<>(kennitala.getText(), banki.getText());
-                }
-                return null;
-            });
-
-            Optional<Pair<String, String>> result = dialog.showAndWait();
-
-            // Prentar bara í IntelliJ, gamla góða insanitycheck
-            result.ifPresent(pair -> {
-                System.out.println("Kennitala: " + pair.getKey());
-                System.out.println("Bankareikningur: " + pair.getValue());
-            });
-        //}
-
+        // Prentar bara í IntelliJ, gamla góða insanitycheck
+        result.ifPresent(pair -> {
+            System.out.println("Kennitala: " + pair.getKey());
+            System.out.println("Bankareikningur: " + pair.getValue());
+        });
     }
 
     /**
