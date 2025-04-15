@@ -177,8 +177,21 @@ public class FloskurController /*implements Initializable*/ {
 
         greidaEinn.setText(greidaVerd + "kr");
         greidaTveir.setText(String.valueOf(greidaFjoldi));
+        if (greidaVerd == 0) {
+            opna0Input();
+        } else {
+            opna();
+        }
+        //opna();
+    }
 
-        opna();
+    public void opna0Input() {
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Upphæð vantar");
+        alert.setHeaderText("Vinsamlegast sláðu inn fjölda áldósa, plastflaskna, og/eða glerflaskna");
+
+        alert.showAndWait();
     }
 
     /**
@@ -187,38 +200,49 @@ public class FloskurController /*implements Initializable*/ {
      * textfields uppsett
      */
     public void opna() {
-        Dialog<Pair<String, String>> dialog = new Dialog<>();
-        dialog.setTitle("Greiðsla");
-        dialog.setHeaderText("Gefðu okkur upplýsingarnar þínar fyrir þessum " + greidaVerd + " kr");
+        /*if (greidaVerd == 0) {
+            TextInputDialog d = new TextInputDialog();
 
-        // Senda og Cancel takkar
-        ButtonType loginButtonType = new ButtonType("Senda", ButtonBar.ButtonData.OK_DONE);
-        dialog.getDialogPane().getButtonTypes().addAll(loginButtonType, ButtonType.CANCEL);
+            // Settur titill og haus
+            d.setTitle("Upphæð vantar");
+            d.setHeaderText("Vinsamlegast sláðu inn fjölda áldósa, plastflaskna, og/eða glerflaskna");
+            // Einfaldur texti sem meginmál
+            d.setContentText("Nafn:");
 
-        // Textfields með ljósgráuinfo/prompti
-        TextField kennitala = new TextField();
-        kennitala.setPromptText("Kennitala, xxxxxx-xxxx");
-        TextField banki = new TextField();
-        banki.setPromptText("Bankareikningur, xxxx-xx-xxxxxx");
+        } else {*/
+            Dialog<Pair<String, String>> dialog = new Dialog<>();
+            dialog.setTitle("Greiðsla");
+            dialog.setHeaderText("Gefðu okkur upplýsingarnar þínar fyrir þessum " + greidaVerd + " kr");
 
-        // VBox af þessum tvem textfields
-        dialog.getDialogPane().setContent(new VBox(10, kennitala, banki));
+            // Senda og Cancel takkar
+            ButtonType loginButtonType = new ButtonType("Senda", ButtonBar.ButtonData.OK_DONE);
+            dialog.getDialogPane().getButtonTypes().addAll(loginButtonType, ButtonType.CANCEL);
 
-        // Þetta gerir svosem ekkert nema gefa sout eitthvað til að prenta
-        dialog.setResultConverter(dialogButton -> {
-            if (dialogButton == loginButtonType) {
-                return new Pair<>(kennitala.getText(), banki.getText());
-            }
-            return null;
-        });
+            // Textfields með ljósgráuinfo/prompti
+            TextField kennitala = new TextField();
+            kennitala.setPromptText("Kennitala, xxxxxx-xxxx");
+            TextField banki = new TextField();
+            banki.setPromptText("Bankareikningur, xxxx-xx-xxxxxx");
 
-        Optional<Pair<String, String>> result = dialog.showAndWait();
+            // VBox af þessum tvem textfields
+            dialog.getDialogPane().setContent(new VBox(10, kennitala, banki));
 
-        // Prentar bara í IntelliJ, gamla góða insanitycheck
-        result.ifPresent(pair -> {
-            System.out.println("Kennitala: " + pair.getKey());
-            System.out.println("Bankareikningur: " + pair.getValue());
-        });
+            // Þetta gerir svosem ekkert nema gefa sout eitthvað til að prenta
+            dialog.setResultConverter(dialogButton -> {
+                if (dialogButton == loginButtonType) {
+                    return new Pair<>(kennitala.getText(), banki.getText());
+                }
+                return null;
+            });
+
+            Optional<Pair<String, String>> result = dialog.showAndWait();
+
+            // Prentar bara í IntelliJ, gamla góða insanitycheck
+            result.ifPresent(pair -> {
+                System.out.println("Kennitala: " + pair.getKey());
+                System.out.println("Bankareikningur: " + pair.getValue());
+            });
+        //}
 
     }
 
