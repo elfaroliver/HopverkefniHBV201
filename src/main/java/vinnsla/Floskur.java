@@ -7,11 +7,15 @@ public class Floskur {
     private int virdiFloskur;
     private int fjoldiFloskur;
 
+    private int virdiGler;
+    private int fjoldiGler;
+
     private static final int VERD_DOSIR = 20;
     private static final int VERD_FLOSKUR = 25;
+    private static final int VERD_GLER = 27;
 
     /**
-     * Setur fjölda dósa og uppfærir viðri dósa.
+     * Setur fjölda dósa og uppfærir virði dósa.
      *
      * @param dosir
      */
@@ -41,11 +45,21 @@ public class Floskur {
     /**
      * Setur fjölda flaska og uppfærir viðri dósa.
      *
-     * @param floskur
+     * @param floskur flöskur
      */
     public void setFjoldiFloskur(int floskur) {
         this.fjoldiFloskur += floskur;
         this.virdiFloskur = this.fjoldiFloskur * VERD_FLOSKUR;
+    }
+
+    /**
+     * Setur fjölda gler og uppfærir virði gler
+     *
+     * @param gler flöskur
+     */
+    public void setFjoldiGler(int gler) {
+        this.fjoldiGler += gler;
+        this.virdiGler = this.fjoldiGler * VERD_GLER;
     }
 
     /**
@@ -58,6 +72,15 @@ public class Floskur {
     }
 
     /**
+     * Skilar fjölda gler
+     *
+     * @return fjöldi gler
+     */
+    public int getFjoldiGler() {
+        return fjoldiGler;
+    }
+
+    /**
      * Skilar virði flaska.
      *
      * @return virdiFloskur
@@ -67,12 +90,23 @@ public class Floskur {
     }
 
     /**
-     * Hreinsar fjölda og virði dósa og flaska.
+     * Skilar virði gler
+     *
+     * @return virdiGler
+     */
+    public int getISKGler() {
+        return this.virdiGler;
+    }
+
+    /**
+     * Hreinsar fjölda og virði dósa, flaska og gler.
      */
     public void hreinsa() {
         this.fjoldiDosir = 0;
         this.fjoldiFloskur = 0;
         this.virdiDosir = 0;
         this.virdiFloskur = 0;
+        this.virdiGler = 0;
+        this.fjoldiGler = 0;
     }
 }

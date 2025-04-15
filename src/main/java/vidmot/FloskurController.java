@@ -132,8 +132,8 @@ public class FloskurController /*implements Initializable*/ {
     @FXML
     protected void onGler(ActionEvent event) {
         try {
-            int fjoldiF = Integer.parseInt(textFieldGler.getText());
-            if (fjoldiF < 0) {
+            int fjoldiG = Integer.parseInt(textFieldGler.getText());
+            if (fjoldiG < 0) {
                 throw new NumberFormatException();
             }
             int heildGler= Integer.parseInt(glerLabel.getText());
@@ -141,14 +141,14 @@ public class FloskurController /*implements Initializable*/ {
             textFieldGler.getStyleClass().removeAll("text-field-error");
             textFieldGler.getStyleClass().add("text-field-valid");
 
-            int gamlaGildi = floskur.getISKFloskur();
+            int gamlaGildi = floskur.getISKGler();
 
-            floskur.setFjoldiFloskur(fjoldiF);
-            glerLabel.setText(String.valueOf(heildGler + fjoldiF));
+            floskur.setFjoldiGler(fjoldiG);
+            glerLabel.setText(String.valueOf(heildGler + fjoldiG));
 
-            samtalsFjoldi += fjoldiF;
+            samtalsFjoldi += fjoldiG;
 
-            int nyjaGildi = floskur.getISKFloskur();
+            int nyjaGildi = floskur.getISKGler();
             samtalsVirdi += nyjaGildi - gamlaGildi;
 
             samtalsEinn.setText(samtalsVirdi + "kr");
