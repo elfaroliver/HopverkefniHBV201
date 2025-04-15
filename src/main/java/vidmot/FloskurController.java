@@ -177,8 +177,21 @@ public class FloskurController /*implements Initializable*/ {
 
         greidaEinn.setText(greidaVerd + "kr");
         greidaTveir.setText(String.valueOf(greidaFjoldi));
+        if (greidaVerd == 0) {
+            opna0Input();
+        } else {
+            opna();
+        }
+        //opna();
+    }
 
-        opna();
+    public void opna0Input() {
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Upphæð vantar");
+        alert.setHeaderText("Vinsamlegast sláðu inn fjölda áldósa, plastflaskna, og/eða glerflaskna");
+
+        alert.showAndWait();
     }
 
     /**
@@ -219,7 +232,6 @@ public class FloskurController /*implements Initializable*/ {
             System.out.println("Kennitala: " + pair.getKey());
             System.out.println("Bankareikningur: " + pair.getValue());
         });
-
     }
 
     /**
